@@ -11,7 +11,6 @@ let dog_names = ['Max','HAS','PuRple','dog'];
 
 let findWords = (a,b) => {
   for (let i =0; i < b.length; i++){
-    console.log(b[i])
     if (a.search(b[i]) != -1){
       console.log("Matched " + b[i])
     } else {console.log('No Matches')}
