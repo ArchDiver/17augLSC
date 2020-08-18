@@ -6,41 +6,15 @@
 // let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 // let dog_names = ["Max","HAS","PuRple","dog"]
 
-// function findWords(){
-//     //Your code goes here
-// }
-
-// //Call method here with parameters
-
-// let groupOfNames = ['Terry', 'Ben', 'Ash', 'Brock', 'Misty'];
-// // loop through an array with a for loop
-// for(let i = 0; i <groupOfNames.length; i++){
-//   console.log(groupOfNames[i])
-// };
-// console.log(groupOfNames
-//   .forEach(element => console.log(element)));
-//   console.log(groupOfNames[0].search('y'));
-
-  var str = "Hello world, welcome to the universe.";
-  var n = str.includes("world");
-  console.log(n)
-
-
-
-
-
-let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
-let dog_names = ['Max','HAS','PuRple','dog']
+let dog_string = "Hello Max, my name is Dog, and I have purple eyes!";
+let dog_names = ['Max','HAS','PuRple','dog'];
 
 let findWords = (a,b) => {
-  c = a.split(' ')
-  console.log(c)
   for (let i =0; i < b.length; i++){
     console.log(b[i])
-    if a.search(b[i]){
+    if (a.search(b[i]) != -1){
       console.log("Matched " + b[i])
     } else {console.log('No Matches')}
-    
   }    
 };
 console.log(findWords(dog_string,dog_names));
@@ -60,7 +34,7 @@ console.log(findWords(dog_string,dog_names));
 // //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 // //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
 
-let given_arr = ['Max','Baseball', 'Reboot','Goku','Trucks','Rodger']
+let given_arr = ['Max','Baseball', 'Reboot','Goku','Trucks','Rodger'];
 
 function evens(a){
   for( let i = 0; i < a.length; i++) {
@@ -70,7 +44,7 @@ function evens(a){
   }
   return a
 };
-console.log(evens(given_arr))
+console.log(evens(given_arr));
 
 
 
